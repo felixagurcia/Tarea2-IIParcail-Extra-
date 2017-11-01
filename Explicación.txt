@@ -1,0 +1,14 @@
+En Java es muy sencillo utilizar expresiones regulares, 
+va todo por objetos. Primero tenemos que tener el patrón
+en un objeto “Pattern”, donde introduciremos la expresión
+regular sin delimitadores mediante el método compile(). 
+Luego, solo tenemos que emparejar el texto con el patrón, 
+nada más fácil que llamar al método matcher(), pasándole el
+texto que queramos comprobar; y nos devolverá un objeto de 
+tipo “Matcher”. Para validar si coincide o no con la expresión
+regular utilizamos find() del objeto “Matcher”, donde se nos 
+devolverá un “true” si coincide o un “false” si no (Una 
+cosa muy cómoda es que si hay varias coincidencias con el
+ patrón dentro del mismo texto, cada vez que llamemos a find()
+nos devolverá la siguiente coincidencia; un “while, for” nos 
+descubriría todas).
